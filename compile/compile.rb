@@ -24,6 +24,10 @@ class Renderer < Redcarpet::Render::HTML
 
     %Q(<h#{header_level + 1} id="#{id}">#{numbers + text}</h#{header_level + 1}>)
   end
+
+  def footnote_ref(number)
+    %Q([<a href="fnref#{number}">#{number}</a>])
+  end
 end
 
 markdown = Redcarpet::Markdown.new(Renderer.new(:with_toc_data => true), {
