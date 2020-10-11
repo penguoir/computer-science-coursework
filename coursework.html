@@ -1,0 +1,335 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/pygments-rouge-css@0.1.0/default.css" rel="stylesheet">
+
+  <style>
+    body {
+      max-width: 40em;
+      padding: 3em 4em 5em 4em;
+
+      font-family: monospace;
+      line-height: 1.1;
+      font-size: 1em;
+      text-align: justify;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+      font-size: 1em;
+      margin-left: -1em;
+    }
+
+    pre {
+      padding: 16px;
+    }
+
+    p > code {
+      background-color: #F8F8F8;
+      padding: 2px;
+    }
+  </style>
+</head>
+
+    <h1 style="text-align: center; text-decoration: underline">
+      Building a project-based learning management system
+    </h1>
+    <div style="display: flex; justify-content: space-between;">
+      <p>
+        Ori Marash [3024]
+      </p>
+      <p>
+        King Alfred School [12254]<br/>
+      </p>
+    </div>
+  <ul>
+<li>
+<a href="#problem-identification">Problem Identification</a>
+</li>
+<li>
+<a href="#why-is-the-problem-solvable-by-computational-methods">Why is the problem solvable by computational methods?</a>
+</li>
+<li>
+<a href="#stakeholders">Stakeholders</a>
+</li>
+<li>
+<a href="#research">Research</a>
+</li>
+<li>
+<a href="#essential-features">Essential Features</a>
+</li>
+<li>
+<a href="#limitations">Limitations</a>
+</li>
+<li>
+<a href="#solution-requirements">Solution requirements</a>
+<ul>
+<li>
+<a href="#hardware">Hardware</a>
+<ul>
+<li>
+<a href="#on-site-server">On-site server</a>
+</li>
+<li>
+<a href="#cloud-server">Cloud server</a>
+</li>
+<li>
+<a href="#summary-table">Summary table</a>
+</li>
+<li>
+<a href="#conclusion">Conclusion</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#software">Software</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#success-criteria">Success Criteria</a>
+<ul>
+<li>
+<a href="#do-this">Do this</a>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="problem-identification">1 Problem Identification</h2
+<p>For the past few years, I have been trying to learn French. I have used a range
+of apps, studied the dictionary, learned the grammar, the lot. And still, I
+cannot speak French. Why is it that when I went to France for a week, I felt my
+confidence in the language skyrocket? </p>
+
+<p>Well, immersion in the language is probably why. Because I was surrounded by
+French, I learned French better.</p>
+
+<p>What if this were possible with maths? Or chemistry? </p>
+
+<p>Imagine travelling to a world where everyone only spoke in physics. Let’s call
+it “physics land”. Being immersed in the culture and language of the place means
+that you will learn physics much faster and more effectively than someone
+learning in a boring classroom. You are immersed in physics! </p>
+
+<p>“Physics land” might sound too good to be true but with an approach called
+project-based learning, teachers can get close to sending their students on a
+trip there. </p>
+
+<p>In project-based learning, instead of being spoon-fed information, groups of
+students are given a massive, real-world task, which they work on for an
+extended period. Through working on that task, they understand how to use
+different resources and tools related to the subject being taught. Project based
+learning drives students to encounter the core ideas and principles of a
+subject. </p>
+
+<p>About 4 years ago, I was part of a pilot where my school at the time tried out
+project-based learning. My group’s task was to design a school from scratch.
+This might seem excessive for a team of 12-year old’s, but it was quite possibly
+the most useful learning I have ever done. Budgeting, planning, project
+management, teamwork, presentations. All these real-world problems we had to
+constantly work through in time for a deadline. We also had to work almost
+entirely by ourselves—we had a teacher mentoring, but they only guided us and
+didn’t hold our hand the whole way through. </p>
+
+<p>One of the things I loved about it is that I knew why I was learning things. I
+didn’t just have to memorize the properties of different timbers for a GCSE
+exam, I had to learn it so that I would know which one to use for the floors of
+the classrooms. I didn’t have to learn how to use Excel because my IT teacher
+told me to, I had to learn it so I could keep track of the imaginary school’s
+budget. </p>
+
+<p>Also, in this project, we had little to no help from our teachers, we were
+completely independent. We had to direct ourselves and plan our time well to
+make sure we hit our deadline. Giving this independence made us want to go above
+and beyond, to show our true potential, and gave us experience in real-world
+time management. </p>
+
+<p>Another advantage is the teamwork aspect of the project. I was in a group with
+people I didn’t really know, this gave me experience in collaborating with
+people outside my comfort circle, a skill which is sought after in today’s
+globalized environment.</p>
+
+<p>Right now, the standard teaching technique emphasizes repetition and
+reinforcement—basically, practice and tests. However, many philosophers and
+educational pioneers are arguing that students best learn when they build
+knowledge for themselves, they use their experiences with the world to create
+new knowledge. This idea is called constructivism and it has been proven to be a
+much more effective way of learning new things. Rather than just being told how
+the world works, you find out for yourself. </p>
+
+<p>My school is implementing project-based learning for a select few years. Using a
+new system which is bulit specifically for PBL would be beneficial to teachers
+and students.</p>
+<h2 id="why-is-the-problem-solvable-by-computational-methods">2 Why is the problem solvable by computational methods?</h2
+<p>Managing large projects is a natural part of computers and computer science.
+There are many algorithms and procedures which aid people in working on projects
+together. The essential features which make this possible are: </p>
+
+<ul>
+<li>Many people involved </li>
+<li>Consistent constraints </li>
+<li>The parallel nature of accessing data</li>
+</ul>
+<h2 id="stakeholders">3 Stakeholders</h2<h2 id="research">4 Research</h2<h2 id="essential-features">5 Essential Features</h2<h2 id="limitations">6 Limitations</h2<h2 id="solution-requirements">7 Solution requirements</h2
+<p>In this section, I specify and justify the requirements for the proposed
+solution, including hardware and software requirements.</p>
+<h3 id="hardware">7.1 Hardware</h3
+<p>The basic hardware required to run the software is a server which has an
+internet connection and is capable of running Ruby. A server is required to
+serve a web page (around which the solution is built). An internet connection is
+required because the webpage is served online. Further, the computer should be
+able to run Ruby as the code is written in Ruby.</p>
+
+<p><a href="https://help.cloud66.com/rails/references/non-recommended-server-sizes.html">According to Cloud66</a>, minimum requirements to run Rails are:</p>
+
+<ul>
+<li>2GB of RAM</li>
+<li>4 vCPUs</li>
+<li>25GB of storage</li>
+</ul>
+
+<p>As the soluton is a basic Rails service, using these requirements is a good
+starting point for a server. My school has an in-house server which could run
+this server wihout a problem. An online platform could partition this amount of
+memory / processing time to the server, too.</p>
+
+<p>There are advantages and disadvantages to using the cloud, as well as using an
+on-site server.</p>
+<h4 id="on-site-server">7.1.1 On-site server</h4
+<p><strong>Definition:</strong> A server that is inside the school premises which runs the website
+code.</p>
+
+<p>This solution has several advantages including:</p>
+
+<ul>
+<li>easily change code,</li>
+<li>full customizability,</li>
+<li>base ongoing cost is cheaper,</li>
+<li>hardware upgrade capabilities,</li>
+<li>security is well-defined,</li>
+</ul>
+
+<p>and more.</p>
+
+<p>All of these advantages come from the fact that the server is <em>physically</em>
+closer to the IT team. However, there are some disadvantages too:</p>
+
+<ul>
+<li>Scaling is complicated and expensive</li>
+<li>Security must be dealt with</li>
+<li>Maintenance is expensive and requiers on-site workers, especially if has to
+have 24/7 availability</li>
+</ul>
+
+<p>These are all issues of a <em>self-managed</em> operation, and are inevitable when
+working with an on-premises computer.</p>
+<h4 id="cloud-server">7.1.2 Cloud server</h4
+<p>Definition: A <strong>logical server</strong> that is built, hosted, and delivered through a
+cloud platform over the internet. [source][technopedia]</p>
+
+<p>A logical server can be defined as a &ldquo;virutal&rdquo; server as it can scale up and
+down onto many machines. In other words, it&rsquo;s not just a single computer.</p>
+
+<p>Cloud servers have the benefit of being managed by a massive company (e.g.
+Google). This means that they must comply with security regulations, and have
+the budget to have top-notch security without being to expensive.</p>
+
+<p>These companies also take on the cost of maintenance, which means that payment
+is either constant, or scales depending on server usage. If a website suddenly
+gets an influx of customers, the server simply scales to more machines to match
+the requests (for an increased price). This means that the server won&rsquo;t just
+crash if there&rsquo;s a sudden influx.</p>
+
+<p>Code can be uploaded to the servers using a version-control software like Git,
+or by uploading files using FTP. This means that changing the code on the server
+is efficient.</p>
+<h4 id="summary-table">7.1.3 Summary table</h4
+<p>To summarise these points, I used this table:</p>
+
+<table><thead>
+<tr>
+<th>Section</th>
+<th>On-site Server</th>
+<th>Cloud server</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Speed</td>
+<td>Depends on hardware</td>
+<td>Depends on pricing tier</td>
+</tr>
+<tr>
+<td>Performance</td>
+<td>Depends on hardware</td>
+<td>Fast</td>
+</tr>
+<tr>
+<td>Ongoing price</td>
+<td>Cheap, but requires dedicated employees</td>
+<td>Very cheap</td>
+</tr>
+<tr>
+<td>Installation cost</td>
+<td>Expensive</td>
+<td>Free (usually)</td>
+</tr>
+<tr>
+<td>Security</td>
+<td>Difficult to implement, but possible</td>
+<td>Guarenteed</td>
+</tr>
+<tr>
+<td>Customizability</td>
+<td>Complete</td>
+<td>Almost copmlete</td>
+</tr>
+<tr>
+<td>Code changing</td>
+<td>Easy</td>
+<td>Easy</td>
+</tr>
+</tbody></table>
+<h4 id="conclusion">7.1.4 Conclusion</h4
+<p>For this project, I chose to use a Cloud server. I chose to use Heroku which is
+a SaaS that provides logical servers. They have a great code updating system
+which takes code automatically from Github or any other Git provider. This means
+that the system always has the latest version of software.</p>
+
+<p>For that reason, and for the reasons stated above, I chose to use Heroku to host
+my website.</p>
+<h3 id="software">7.2 Software</h3
+<p>As the propsed solution is quite large, I chose to use a well-established
+framework called &ldquo;Ruby on Rails&rdquo; (&ldquo;Rails&rdquo;) to build my site. Rails has great
+developer experience, with almost every question answered on their documentation
+website. This means that I could quickly learn how to use the framework and
+start building.</p>
+
+<p>Rails includes &ldquo;generators&rdquo; which can build a large part of boilerplate code
+with a single command line. This saves on development time and prevents bugs.</p>
+
+<p>Another feature of Rails is it&rsquo;s MVC architecture. Each resource in the site has
+its own model, view, and controller. This seperation of concerns helps keep
+developers focused on their task, and also keeps the project maintainable, even
+with many different files.</p>
+
+<p>Rails&rsquo;s abstraction of SQL statements makes code readable and maintainable. For
+example, instead of writing an SQL statement like:</p>
+<div class="highlight"><pre class="highlight sql"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">users</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+</code></pre></div>
+<p>the following can be written:</p>
+<div class="highlight"><pre class="highlight ruby"><code><span class="no">User</span><span class="p">.</span><span class="nf">find</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre></div>
+<p>Although a knowledge of SQL is still required, this simplifies the code and </p>
+<h2 id="success-criteria">8 Success Criteria</h2
+<p>In order to make sure my program works properly, i have to:</p>
+<h3 id="do-this">8.1 Do this</h3
+<table><thead>
+<tr>
+<th>blah</th>
+<th>bleh</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>blp</td>
+<td>Bloo</td>
+</tr>
+</tbody></table>
