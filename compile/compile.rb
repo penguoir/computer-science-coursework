@@ -22,7 +22,7 @@ class Renderer < Redcarpet::Render::HTML
     # Create id for TOC
     id = text.downcase.gsub(/ /, '-').gsub(/[^A-Z|a-z|-]/, '')
 
-    %Q(<h#{header_level + 1} id="#{id}">#{numbers + text}</h#{header_level + 1})
+    %Q(<h#{header_level + 1} id="#{id}">#{numbers + text}</h#{header_level + 1}>)
   end
 end
 
@@ -61,7 +61,7 @@ content = File.read(".temp")
 head = File.read("compile/head.html")
 
 # Add the css, table of contents, and content to an HTML file
-File.open('coursework.html', 'w') do |file|
+File.open('index.html', 'w') do |file|
   file << head
   file << %q(
     <h1 style="text-align: center; text-decoration: underline">
