@@ -26,7 +26,7 @@ class Renderer < Redcarpet::Render::HTML
   end
 
   def footnote_ref(number)
-    %Q([<a href="fnref#{number}">#{number}</a>])
+    %Q([<a href="#fnref#{number}">#{number}</a>])
   end
 end
 
