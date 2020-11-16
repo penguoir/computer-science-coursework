@@ -64,7 +64,9 @@ content = File.read(".temp")
 # Read the CSS file
 head = File.read("compile/head.html")
 
-Dir.mkdir 'public'
+unless File.exists? 'public'
+  Dir.mkdir 'public'
+end
 
 # Add the css, table of contents, and content to an HTML file
 File.open('public/index.html', 'w') do |file|
@@ -87,7 +89,7 @@ File.open('public/index.html', 'w') do |file|
 end
 
 # Remove the temporary file
-`trash .temp`
+`rm .temp`
 
 # Brag about it
 puts "Created report with #{doc_files.length} files."
