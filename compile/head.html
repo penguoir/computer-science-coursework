@@ -12,21 +12,31 @@
   <style>
     body {
       max-width: 40em;
-      padding: 3em 2em 5em 2em;
-
-      font-family: monospace;
-      line-height: 1.1;
-      font-size: 1em;
+      margin: 5em auto;
+      font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      line-height: 1.2;
+      font-size: .9em;
     }
 
     h1,h2,h3,h4,h5,h6 {
+      margin-top: 1.5em;
       font-size: 1em;
-      margin-left: -1em;
     }
+
+    h2 {
+        padding-bottom: 1em;
+        border-bottom: 1px solid #333;
+    }
+
+    h4 {
+        color: #2d3748;
+        font-style: italic;
+    }
+
 
     pre {
       padding: 16px;
-      overflow-x: scroll;
+      overflow-x: auto;
     }
 
     p > code {
