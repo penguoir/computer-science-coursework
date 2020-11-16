@@ -64,8 +64,10 @@ content = File.read(".temp")
 # Read the CSS file
 head = File.read("compile/head.html")
 
+Dir.mkdir 'public'
+
 # Add the css, table of contents, and content to an HTML file
-File.open('index.html', 'w') do |file|
+File.open('public/index.html', 'w') do |file|
   file << head
   file << %q(
     <h1 style="text-align: center; text-decoration: underline">
